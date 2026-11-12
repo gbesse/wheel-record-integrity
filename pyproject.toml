@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wheel-record-integrity"
+version = "0.1.0a1"
+description = "FR: Vérifier RECORD et les octets internes des wheels | EN: Verify wheel RECORD and internal bytes | ES: Verificar RECORD y bytes internos de wheels"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+wheel-record-integrity = "wheel_record_integrity.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["wheel_record_integrity*"]

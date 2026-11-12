@@ -1,0 +1,6 @@
+{
+  "files": {
+    "example/__init__.py": "answer=42\n"
+  },
+  "tamper": "example/__init__.py"
+}
